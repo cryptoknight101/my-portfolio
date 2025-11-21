@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">
+        <div class="avatar">YN</div>
+        <div>
+          <div class="name">Your Name</div>
+          <div class="muted subtitle">Web Developer • AI enthusiast</div>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="left">
+          <h1>Hi — I'm <span class="accent">Your Name</span></h1>
+          <p class="lead">I build clean, fast websites and simple AI tools.</p>
+          <div class="cta">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Hire Me</a>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="card-title">Quick Info</div>
+          <div class="muted">Location: India</div>
+          <div class="muted">Email: <a class="link" href="mailto:your.email@example.com">your.email@example.com</a></div>
+          <div><a class="link" href="#">Download Resume</a></div>
+        </div>
+      </section>
+
+      <div class="grid">
+        <div>
+          <section id="about" class="card">
+            <h3>About Me</h3>
+            <p class="muted">I’m a Class 12 student who codes for fun and learning.</p>
+          </section>
+
+          <section id="projects" class="card">
+            <h3>Projects</h3>
+            <div class="projects">
+              <div class="project">
+                <strong>Personal Portfolio Website</strong>
+                <p class="muted">Responsive HTML + CSS portfolio website.</p>
+              </div>
+              <div class="project">
+                <strong>To‑Do App</strong>
+                <p class="muted">A simple localStorage-based task app.</p>
+              </div>
+              <div class="project">
+                <strong>Weather App</strong>
+                <p class="muted">Weather data using a free API.</p>
+              </div>
+              <div class="project">
+                <strong>AI Shorts Helper</strong>
+                <p class="muted">Generate short video scripts using prompts.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="card">
+            <h3>Skills</h3>
+            <div class="skills">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">React (basic)</div>
+              <div class="skill">Tailwind (basic)</div>
+              <div class="skill">Prompt Engineering</div>
+            </div>
+          </section>
+        </div>
+
+        <aside>
+          <div class="card" id="contact">
+            <h3>Contact</h3>
+            <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
+              <div class="field">
+                <label>Name</label>
+                <input placeholder="Your name" />
+              </div>
+              <div class="field">
+                <label>Email</label>
+                <input placeholder="your.email@example.com" />
+              </div>
+              <div class="field">
+                <label>Message</label>
+                <textarea placeholder="Tell me about your project..."></textarea>
+              </div>
+              <button class="btn" type="submit">Send</button>
+            </form>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        © <span id="year"></span> Your Name
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

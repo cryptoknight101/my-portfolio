@@ -1,0 +1,69 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#9aa6b2;
+  --accent:#4f46e5;
+  --glass: rgba(255,255,255,0.04);
+  --radius:16px;
+  --maxw:1100px;
+  font-family: Inter, sans-serif;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:linear-gradient(180deg,#071024,#081223);
+  color:#e6eef8;
+  padding:40px 20px;
+  display:flex;justify-content:center;
+}
+.wrap{width:100%;max-width:var(--maxw);} 
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}
+.logo{display:flex;gap:14px;align-items:center}
+.avatar{
+  width:56px;height:56px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),#06b6d4);
+  display:flex;align-items:center;justify-content:center;
+  font-weight:700;color:#071024
+}
+.name{font-weight:700;font-size:18px}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{
+  display:flex;gap:30px;align-items:center;
+  background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);
+  padding:30px;border-radius:var(--radius);
+  box-shadow:0 6px 30px rgba(2,6,23,0.6);
+  margin-bottom:22px;
+}
+.left{flex:1}
+h1{margin:0;font-size:32px}
+.accent{color:var(--accent)}
+.lead{color:var(--muted);margin-top:10px}
+.cta{margin-top:18px}
+.btn{
+  padding:10px 16px;border-radius:10px;
+  background:var(--accent);color:white;text-decoration:none;font-weight:600
+}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.info-card{
+  width:220px;text-align:right;background:var(--card);
+  padding:14px;border-radius:12px;box-shadow:0 4px 20px rgba(2,6,23,0.5)
+}
+.card-title{font-weight:700;margin-bottom:8px}
+.grid{display:grid;grid-template-columns:1fr 340px;gap:20px}
+.card{
+  background:var(--card);padding:18px;border-radius:14px;
+  box-shadow:0 4px 20px rgba(2,6,23,0.5)
+}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.project{background:var(--glass);padding:12px;border-radius:12px}
+.project:hover{transform:translateY(-6px);transition:0.18s}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.skill{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:10px;font-size:13px;color:var(--muted)}
+.field{display:flex;flex-direction:column;margin-bottom:10px}
+label{font-size:13px;font-weight:600;color:#bcd3ff;margin-bottom:6px}
+input,textarea{
+  background:rgba(255,255,255,0.02);
+  border:1px solid rgba(255,255,255,0.04);
+  padding:10px;border-radius:8px;color:var(--muted)
+}
+footer{text-align:center;margin-top:20px;color:var(--muted);font-size:14px}
